@@ -1,6 +1,6 @@
 package apitester;
 
-import RestPurpose.WeatherFinder;
+import test.activity.get.WeatherFinder;
 import org.testng.annotations.Test;
 
 public class TC002_GET_Tester {

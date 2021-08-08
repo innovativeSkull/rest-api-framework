@@ -1,4 +1,4 @@
-package RestAction;
+package rest.action;
 
 import io.restassured.http.Header;
 import io.restassured.response.Response;

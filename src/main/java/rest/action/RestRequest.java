@@ -1,4 +1,4 @@
-package RestAction;
+package rest.action;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;

@@ -1,8 +1,7 @@
-package RestAction;
+package rest.action;
 
 import io.restassured.response.Response;
 
-import java.lang.invoke.MethodType;
 import java.util.HashMap;
 
 public interface IRestResponseAction {

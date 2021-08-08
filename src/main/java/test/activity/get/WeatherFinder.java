@@ -1,11 +1,8 @@
-package RestPurpose;
+package test.activity.get;
 
-import RestAction.RestActionBase;
+import rest.action.RestActionBase;
 import io.restassured.http.Method;
 import org.testng.Assert;
-
-import java.util.HashMap;
-import java.util.Random;
 
 public class WeatherFinder {
 

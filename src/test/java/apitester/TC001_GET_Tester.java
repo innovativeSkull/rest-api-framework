@@ -1,6 +1,5 @@
 package apitester;
 
-import RestPurpose.WeatherFinder;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
