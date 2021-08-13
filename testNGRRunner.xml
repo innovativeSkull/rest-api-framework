@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite">
+    
+    <listeners>
+        <listener class-name="rest.listener.custom.CustomIReporter"></listener>
+    </listeners>
+    
+    <!--<test name="GET Tests ">
+        <classes>
+            <class name="apitester.TC001_GET_Tester"/>
+            <class name="apitester.TC002_GET_Tester"/>
+        </classes>
+    </test>-->
+    <test name="POST Tests">
+        <classes>
+            <class name="apitester.TC003_POST_Tester"/>
+        </classes>
+    </test>
+</suite>
