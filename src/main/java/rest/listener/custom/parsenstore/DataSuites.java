@@ -8,7 +8,7 @@ public class DataSuites {
     List<DataSuite> dataSuitesList;
 
     public DataSuites() {
-        dataSuitesList = new ArrayList<>();
+        this.dataSuitesList = new ArrayList<>();
     }
 
     public List<DataSuite> getDataSuitesList() {
