@@ -19,6 +19,16 @@ public class RestActionBase {
         this.request.setRequestType(restType);
     }
 
+    public void setPathParameter(String key, String value) {
+        this.request.setPathParameter(key, value);
+    }
+
+    public void setPathParameter(HashMap<String, String> pathParameterMap) {
+        for (String key : pathParameterMap.keySet()) {
+            this.request.setPathParameter(key, pathParameterMap.get(key));
+        }
+    }
+
     public void setQueryParameter(String key, String value) {
         this.request.setQueryParameter(key, value);
     }

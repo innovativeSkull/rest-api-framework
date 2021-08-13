@@ -5,6 +5,8 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.util.HashMap;
+
 
 public class RestRequest implements IRestRequestAction {
 
@@ -15,6 +17,11 @@ public class RestRequest implements IRestRequestAction {
     public void setBaseURI(String baseURI) {
         RestAssured.baseURI = baseURI;
         this.requestSpecification = RestAssured.given();
+    }
+
+    @Override
+    public void setPathParameter(String key, String value) {
+        requestSpecification = requestSpecification.pathParam(key, value);
     }
 
     @Override

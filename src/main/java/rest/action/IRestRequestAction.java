@@ -5,16 +5,18 @@ import io.restassured.response.Response;
 
 public interface IRestRequestAction {
 
-    public void setBaseURI(String baseUri);
+    void setBaseURI(String baseUri);
 
-    public void setQueryParameter(String key, String value);
+    void setPathParameter(String key, String value);
 
-    public void setHeaderParameter(String key, String value);
+    void setQueryParameter(String key, String value);
 
-    public void setRequestBody(String payload);
+    void setHeaderParameter(String key, String value);
 
-    public void setRequestType(Method method);
+    void setRequestBody(String payload);
 
-    public Response execute();
+    void setRequestType(Method method);
+
+    Response execute();
 
 }
